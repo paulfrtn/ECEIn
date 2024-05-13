@@ -1,0 +1,8 @@
+Pour vous connecter utilisez à PHP myadmin : 
+- dans la case serveurs vous n'entrez rien
+- dans la case utilisateur, entrez "root"
+- et le mot de passe est "mypassword"
+
+Ensuite pour accéder au site utilisez les identifiants suivant : 
+- pseudo : paulfrtn
+- mot de passe : 123456789

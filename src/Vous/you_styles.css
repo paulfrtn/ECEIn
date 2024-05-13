@@ -1,0 +1,521 @@
+body {
+  padding: 0px;
+  margin: 0px;
+  background: #c3d3d2;
+  transition: all 1s;
+}
+
+/*----------------------BOUTON DU DARK MODE------------------------*/
+.switch input {
+  display: none;
+}
+
+.darkBtn {
+  width: 3rem;
+}
+
+.darkBtn label {
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 1.5rem;
+  box-shadow: 0.3rem 0.3rem 0.6rem rgba(11, 91, 101, 0.3),
+    -0.2rem -0.2rem 0.5rem rgba(11, 91, 101, 0.3);
+  background: rgba(255, 255, 255, 0);
+  position: relative;
+  cursor: pointer;
+  border-radius: 1.6rem;
+}
+
+.darkBtn label::after {
+  content: "";
+  position: absolute;
+  left: 0.4rem;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background: rgba(51, 131, 141, 1);
+  transition: all 0.4s ease;
+}
+
+.darkBtn label::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(330deg,
+      rgba(11, 91, 101, 1) 0%,
+      rgba(51, 131, 141, 1) 50%,
+      rgba(71, 151, 161, 1) 100%);
+  opacity: 0;
+  transition: all 0.4s ease;
+}
+
+.switch input:checked~label::before {
+  opacity: 1;
+}
+
+.switch input:checked~label::after {
+  left: 57%;
+  background: white;
+}
+
+/*--------------------------------------------------------------*/
+
+/*----------------------PROPRIÉTÉS CSS POUR LE DARK MODE------------------------*/
+
+.dark-mode {
+  background-color: rgba(90, 90, 90, 1);
+  transition: 1s;
+}
+
+.dark-mode .navbar {
+  background-color: rgba(55, 55, 55, 1);
+  transition: 1s;
+}
+
+.dark-mode .nav-link,
+.navbar-brand {
+  color: rgba(255, 255, 255, 0.7);
+  transition: 1s;
+}
+
+.dark-mode .nav-link:hover {
+  color: rgba(255, 255, 255, 1);
+  transition: 1s;
+}
+
+.dark-mode .page-header {
+  background-color: rgba(55, 55, 55, 1);
+  color: white;
+  transition: 1s;
+}
+
+.dark-mode .page-header .description h1 {
+  color: white;
+  transition: 1s;
+}
+
+.dark-mode .page-header .description p {
+  color: #bbb;
+  transition: 1s;
+}
+
+.dark-mode .features {
+  background-color: rgba(90, 90, 90, 1);
+  color: #bbb;
+  transition: 1s;
+}
+
+.dark-mode .features .column {
+  background-color: rgba(55, 55, 55, 1);
+  color: white;
+  transition: 1s;
+}
+
+.dark-mode .features .feature-title {
+  color: white;
+  transition: 1s;
+}
+
+.dark-mode .features .feed {
+  background: rgba(90, 90, 90, 0);
+  color: white;
+  transition: 1s;
+}
+
+.dark-mode .features .feedHead {
+  background: rgba(55, 55, 55, 1);
+  color: white;
+  transition: 1s;
+}
+
+.dark-mode .features .feedBody {
+  background: rgba(55, 55, 55, 1);
+  color: white;
+  transition: 1s;
+}
+
+.dark-mode .features .feed .Objet button {
+  background: rgba(55, 55, 55, 1);
+  color: white;
+  transition: 1s;
+}
+
+.dark-mode .features .feed .Objet button:hover {
+  background: #bbb;
+  color: black;
+  transition: 1s;
+}
+
+
+.dark-mode .header_contain {
+  background: rgba(55, 55, 55, 1);
+  transition: 1s;
+
+}
+
+.dark-mode .header_contain .profile_pic {
+  border: 5px solid #bbb;
+  transition: 1s;
+}
+
+.dark-mode .banner_below_right button {
+  background-color: rgba(55, 55, 55, 1);
+  transition: 1s;
+  box-shadow: 2px 6px 6px #bbb;
+  color: #bbb;
+}
+
+.dark-mode .mon_container {
+  background-color: rgba(90, 90, 90, 0);
+}
+
+
+
+
+.dark-mode .main_contain .main {
+
+  background-color: rgba(55, 55, 55, 1);
+  color: #bbb;
+  transition: 1s;
+
+}
+
+
+
+
+.dark-mode .header_contain .banner_below h4 {
+  color: #bbb;
+  transition: 1s;
+}
+
+.dark-mode .header_contain .banner_below h6 {
+  color: #bbb;
+  transition: 1s;
+}
+
+
+.dark-mode .header_contain .banner_below .banner_below_center {
+  transition: 1s;
+  color: #bbb;
+
+}
+
+/*----------------------------------------------------------------------*/
+
+/*----------------------NAVIGATION BAR------------------------*/
+.navbar {
+  background: #e7f0f1;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  transition: 1s;
+}
+
+.nav-link,
+.navbar-brand {
+  color: rgba(11, 91, 101, 0.7);
+  cursor: pointer;
+  transition: all 1s;
+}
+
+.nav-link {
+  margin-right: 1em !important;
+}
+
+.nav-link:hover {
+  color: rgba(11, 91, 101, 1);
+  text-decoration: underline;
+}
+
+.navbar-collapse {
+  justify-content: flex-end;
+}
+
+.dropdown-menu {
+  margin-right: 3vh;
+  background-color: #e7f0f1;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+
+#exit {
+  color: red;
+}
+
+#exit:hover {
+  color: #e7f0f1;
+  background-color: red;
+  transition: 0.5s;
+}
+
+.dropdown-menu a {
+  color: rgba(11, 91, 101, 1);
+}
+
+.dropdown-menu a:hover {
+  background-color: rgba(11, 91, 101, 1);
+  color: #e7f0f1;
+  transition: 0.5s;
+}
+
+/*------------------------------------------------------------------------*/
+
+/*-----------------------------FOOTER-------------------------------*/
+.page-footer {
+  margin: 3vh;
+  border-radius: 20px;
+  background-color: rgba(11, 91, 101, 1);
+  color: #fff;
+  padding: 20px;
+}
+
+.footer-copyright {
+  color: #fff;
+}
+
+@media (max-width: 575.98px) {
+  .description {
+    left: 0;
+    padding: 0 15px;
+    position: absolute;
+    top: 10%;
+    transform: none;
+    text-align: center;
+  }
+
+  .description h1 {
+    font-size: 2em;
+  }
+
+  .description p {
+    font-size: 1.2rem;
+  }
+
+  .features {
+    margin: 0;
+  }
+}
+
+/*--------------------------------------------------------------*/
+
+/*---------------------Container--------------------------------*/
+
+.mon_container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+  margin-left: 30vh;
+  margin-right: 30vh;
+
+}
+
+.header_contain {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 40vh;
+  margin-bottom: 3vh;
+  transition: 1s;
+  background-color: #e7f0f1;
+  border-radius: 10px;
+  transition: 1s;
+  color: rgba(11, 91, 101, 1);
+  transition: 1s;
+}
+
+
+
+.header_contain .banner_below {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 15vh;
+  height: 30vh;
+  margin-left: 5vh;
+  transition: 1s;
+
+}
+
+.header_contain .banner_below .banner_below_left {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  justify-content: space-around;
+  margin-bottom: 1vh;
+
+
+}
+
+.header_contain .banner_below .banner_below_right {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-evenly;
+
+}
+
+.header_contain .banner_below .banner_below_center {
+  display: flex;
+  flex: 2;
+  flex-direction: column;
+  justify-content: center;
+  justify-content: space-evenly;
+  color: rgba(11, 91, 101, 1);
+  transition: 1s;
+
+}
+button {
+  background-color: #e7f0f1;
+  margin-bottom: 1vh;
+  transition: 1s;
+  border: 2px solid #c3d3d2;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 2px 6px 6px rgba(0, 139, 139, 0.3);
+  transition: all 0.5s;
+}
+
+.banner_below_right button:hover {
+  transform: translateY(-3px)
+}
+
+.add_form{
+  padding-top: 1.6vh;
+}
+
+.header_contain .banner_below h4 {
+  margin-top: 0.5vh;
+  margin-bottom: 0.5vh;
+  transition: 1s;
+  color: rgba(11, 91, 101, 1);
+}
+
+.header_contain .banner_below h6 {
+  margin-top: 0.5vh;
+  margin-bottom: 0.5vh;
+  transition: 1s;
+  color: rgba(11, 91, 101, 1);
+}
+
+.header_contain .banner_below h6 a {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 5px 0px;
+  position: relative;
+}
+
+.header_contain .banner_below h6 a:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: linear-gradient(to right, cyan, darkcyan);
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+.header_contain .banner_below h6 a:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+.main_contain {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 3vh;
+}
+
+.main_contain .main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: 1s;
+  background-color: #e7f0f1;
+  border-radius: 10px;
+  margin-top: -1vh;
+  color: rgba(11, 91, 101, 1);
+  transition: 1s;
+}
+
+.form_head {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.activ {
+  background-color: #c3d3d2;
+  box-shadow: 2px 6px 6px rgba(0, 139, 139, 0.3);
+  border-radius: 10px;
+  margin-left: 2vh;
+  margin-right: 2vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 1s;
+}
+
+.activ:hover {
+  cursor: pointer;
+  transform: scale(1.02);
+}
+
+#listeFormations {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 2vh;
+  margin-left: 2vh;
+  margin-right: 2vh;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  margin-bottom: 2vh;
+  transition: all 1s;
+}
+
+/* Styles de la poignée (la partie mobile de la barre de défilement) */
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: rgba(0, 139, 139, 0.3);
+  transition: all 1s;
+}
+
+/* Style de la poignée lorsqu'elle est survolée */
+::-webkit-scrollbar-thumb:hover {
+  height: 15px;
+  background-color: darkcyan;
+  transition: all 1s;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Animation de remplissage */
+::-webkit-scrollbar-thumb:hover::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: darkcyan;
+  animation: fillAnimation 1s linear forwards;
+}

@@ -1,0 +1,282 @@
+  body {
+      min-height: 100vh;
+      background-color: #c3d3d2;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      margin: 0;
+      padding: 8vh;
+      box-sizing: border-box;
+  }
+
+  /*----------------------NAVIGATION BAR------------------------*/
+  .navbar {
+      background-color: #e7f0f1;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 999;
+      transition: 1s;
+  }
+
+  .nav-link,
+  .navbar-brand {
+      color: rgba(11, 91, 101, 0.7);
+      cursor: pointer;
+      transition: all 1s;
+  }
+
+  .nav-link {
+      margin-right: 1em !important;
+  }
+
+  .nav-link:hover {
+      color: rgba(11, 91, 101, 1);
+      text-decoration: underline;
+  }
+
+  .navbar-collapse {
+      justify-content: flex-end;
+  }
+
+  .dropdown-menu {
+      margin-right: 3vh;
+      background-color: #e7f0f1;
+      border-radius: 10px;
+      transition: 0.5s;
+  }
+
+
+  #exit {
+      color: red;
+  }
+
+  #exit:hover {
+      color: #e7f0f1;
+      background-color: red;
+      transition: 0.5s;
+  }
+
+  .dropdown-menu a {
+      color: rgba(11, 91, 101, 1);
+  }
+
+  .dropdown-menu a:hover {
+      background-color: rgba(11, 91, 101, 1);
+      color: #e7f0f1;
+      transition: 0.5s;
+  }
+
+  /*------------------------------------------------------------------------*/
+
+  .card {
+      margin-top: 5vh;
+      background: #e7f0f1;
+      width: 70vh;
+      height: 80vh;
+      position: relative;
+      border-radius: 10px;
+      padding-top: 50vh;
+      display: flex;
+      flex-direction: column;
+      gap: 2vh;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      font-size: 1.5em;
+      overflow-y: auto;
+  }
+
+  .frame {
+      width: 40vh;
+      margin: 40px auto;
+      text-align: center;
+  }
+
+  button {
+      margin: 0;
+  }
+
+  .custom-btn {
+      width: 40vh;
+      height: 40px;
+      color: rgb(11, 90, 101);
+      border-radius: 10px;
+      margin-bottom: 5px;
+      font-family: 'Lato';
+      background: transparent;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      position: relative;
+      display: inline-block;
+      box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
+          7px 7px 20px 0px rgba(0, 0, 0, .1),
+          4px 4px 5px 0px rgba(0, 0, 0, .1);
+      outline: none;
+  }
+
+  .submit {
+      background: #c3d3d2;
+      border: none;
+      font-size: 20px;
+      z-index: 1;
+  }
+
+  .submit:after {
+      position: absolute;
+      content: "";
+      width: 0;
+      height: 100%;
+      top: 0;
+      right: 0;
+      z-index: -1;
+      background-color: rgb(11, 90, 101);
+      border-radius: 10px;
+      box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
+          7px 7px 20px 0px rgba(0, 0, 0, .1),
+          4px 4px 5px 0px rgba(0, 0, 0, .1);
+      transition: all 0.7s ease;
+  }
+
+  .submit:hover {
+      color: #fff;
+      transition: all 0.7s ease;
+  }
+
+  .submit:hover:after {
+      left: 0;
+      width: 100%;
+  }
+
+  .submit:active {
+      top: 2px;
+  }
+
+  .card h2 {
+      padding: 5vh;
+      color: rgb(11, 90, 101);
+      text-align: center;
+      font-size: 1.5em;
+      font-weight: bold;
+      font-family: 'Lato';
+  }
+
+  #formulaire {
+      display: flex;
+      flex-direction: column;
+      color: rgb(11, 90, 101);
+      gap: 2vh;
+      font-family: 'Lato';
+  }
+
+  #fichier {
+      display: flex;
+      flex-direction: row;
+      font-family: 'Lato';
+      gap: 2vh;
+  }
+
+  #fichier label {
+      font-size: 20px;
+      font-family: 'Lato';
+  }
+
+  #profilePicture, #backgroundPicture {
+      width: fit-content;
+      padding-top: 4px;
+      font-size: 12px;
+      color: rgb(11, 90, 101);
+      margin-bottom: 30px;
+      border: none;
+  }
+
+  #dateNaissance {
+      display: flex;
+      flex-direction: row;
+      gap: 2vh;
+  }
+
+  #vide {
+      color: transparent;
+      cursor: default;
+  }
+
+  #birthdate {
+    margin-top: 7px;
+      font-family: 'Lato';
+      font-size: 16px;
+      color: rgb(11, 90, 101);
+      padding: 5px;
+      border: 1px solid rgb(11, 90, 101);
+      border-radius: 10px;
+      width: 10vh;
+  }
+
+  #dateNaissance label {
+      flex-grow: 1;
+      font-size: 20px;
+      font-family: 'Lato';
+      color: rgb(11, 90, 101);
+  }
+
+
+  .card form .user-box {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      padding: 0;
+      margin: 0;
+      display: flex;
+  }
+
+  #error-message {
+      color: red;
+      font-size: 0.6em;
+  }
+
+  #prenom,
+  #nom,
+  #mail,
+  #mdp,
+  #pseudo{
+      width: 50vh;
+      padding: 10px 0;
+      font-size: 16px;
+      color: rgb(11, 90, 101);
+      margin-bottom: 30px;
+      border: none;
+      border-bottom: 1px solid rgb(11, 90, 101);
+      outline: none;
+      background: transparent;
+  }
+
+  #role{
+    width: 50vh;
+    padding: 10px 0;
+    font-size: 20px;
+    color: rgb(11, 90, 101);
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid rgb(11, 90, 101);
+    outline: none;
+    background: transparent;
+}
+
+  .card form .user-box label {
+      position: absolute;
+      top: 0;
+      left: 0;
+      padding: 10px 0;
+      font-size: 20px;
+      color: rgb(11, 90, 101);
+      pointer-events: none;
+      transition: .5s;
+  }
+
+  .card .user-box input:focus~label,
+  .card .user-box input:valid~label {
+      top: -20px;
+      left: 0;
+      color: rgb(11, 90, 101);
+      font-size: 16px;
+  }

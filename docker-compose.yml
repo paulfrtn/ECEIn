@@ -1,0 +1,38 @@
+version: "3.8"
+services:
+  php-apache:
+    ports:
+      - "9000:80"
+    links:
+      - db
+    build: './build/php'
+    volumes:
+      - ./src:/var/www/html/src
+      - ./lib:/var/www/html/lib
+      - ./images:/var/www/html/images
+  db:
+    ports:
+      - "3300:3300"
+    build: './build/mysql'
+    environment:
+      MYSQL_ROOT_PASSWORD: mypassword
+      MYSQL_DATABASE: ECE   # Corrected typo here
+      MYSQL_TCP_PORT: 3300
+    volumes:
+      - dbData:/var/lib/mysql
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin:latest
+    links:
+      - db
+    environment:
+      PMA_ARBITRARY: 1
+      PMA_HOST: db
+      PMA_PORT: 3300
+      UPLOAD_LIMIT: 20M
+    ports:
+      - 8899:80
+
+volumes:
+  app:
+  dbData:

@@ -1,0 +1,432 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    background: #c3d3d2;
+    transition: all 1s;
+}
+
+/*----------------------BOUTON DU DARK MODE------------------------*/
+.switch input {
+    display: none;
+  }
+  .darkBtn {
+    width: 3rem;
+  }
+  .darkBtn label{
+    margin-top: 8px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 1.5rem;
+    box-shadow: 0.3rem 0.3rem 0.6rem rgba(11, 91, 101, 0.3), -0.2rem -0.2rem 0.5rem rgba(11, 91, 101, 0.3);
+    background: rgba(255, 255, 255, 0);
+    position: relative;
+    cursor: pointer;
+    border-radius: 1.6rem;
+  }
+  .darkBtn label::after {
+    content: "";
+    position: absolute;
+    left: 0.4rem;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background: rgba(51, 131, 141, 1);
+    transition: all 0.4s ease;
+  }
+  .darkBtn label::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    background: linear-gradient(330deg, rgba(11, 91, 101, 1) 0%, rgba(51, 131, 141, 1) 50%, rgba(71, 151, 161, 1) 100%);
+    opacity: 0;
+    transition: all 0.4s ease;
+  }
+  .switch input:checked ~ label::before {
+    opacity: 1;
+  }
+  .switch input:checked ~ label::after {
+    left: 57%;
+    background: #c3d3d2;
+  }
+
+/*--------------------Dark Mode---------------------------------*/
+.dark-mode {
+    background-color: rgba(90, 90, 90, 1);
+    transition: 1s;
+}
+
+.dark-mode .darkBtn{
+    background-color: rgba(55, 55, 55, 1);
+    transition: 1s;
+}
+
+.dark-mode .navbar {
+    background-color: rgba(55, 55, 55, 1);
+    transition: 1s;
+}
+
+.dark-mode .nav-link,
+.navbar-brand {
+    color: rgba(255, 255, 255, 0.7);
+    transition: 1s;
+}
+
+.dark-mode .nav-link:hover {
+    color: #e7f0f1;
+    transition: 1s;
+}
+
+.dark-mode .historique {
+    background-color: rgba(55, 55, 55, 1);
+    transition: 1s;
+}
+
+.dark-mode .historique h4 {
+    color: #e7f0f1;
+    border-bottom: 1px solid #a7a7a7;
+    transition: 1s;
+}
+
+.dark-mode .historique .conversation {
+    background: rgba(55, 55, 55, 1);
+    transition: 1s;
+}
+
+.dark-mode .historique .conversation:hover {
+    background: rgba(139, 210, 219, 0.1);
+    cursor: pointer;
+}
+
+.dark-mode .historique .conversation .infoMess {
+    color: #e7f0f1;
+    border-bottom: 1px solid #a7a7a7;
+    transition: 1s;
+}
+
+.dark-mode .wrapper {
+    background: rgba(55, 55, 55, 1);
+    transition: 1s;
+}
+
+.dark-mode .wrapper .chatbox {
+    background: rgba(90, 90, 90, 1);
+    background-image: url('../../images/wpp/whattsapp.png');
+    border: 1px solid #a7a7a7;
+    border-bottom: 3px solid #a7a7a7;
+    transition: 1s;
+}
+
+.dark-mode .wrapper #usermsg {
+    background: rgba(90, 90, 90, 1);
+    color: #e7f0f1;
+    border: 1px solid #a7a7a7;
+    transition: 1s;
+}
+
+.dark-mode .wrapper .chatbox .msgln {
+    background: rgba(90, 90, 90, 0.95);
+    color: #e7f0f1;
+    border: 1px solid #a7a7a7;
+    transition: 1s;
+}
+
+.dark-mode .actionMess {
+    background: rgba(55, 55, 55, 1);
+    transition: 1s;
+}
+
+.dark-mode #submitmsg {
+    background: rgba(55, 55, 55, 1);
+    transition: 1s;
+}
+
+/*--------------------------NAVBAR------------------------------------*/
+.navbar {
+    background: #e7f0f1;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    transition: 1s;
+}
+
+.nav-link,
+.navbar-brand {
+    color: rgba(11, 91, 101, 0.7);
+    cursor: pointer;
+    transition: all 1s;
+}
+
+.nav-link {
+    margin-right: 1em !important;
+}
+
+.nav-link:hover {
+    color: rgba(11, 91, 101, 1);
+    text-decoration: underline;
+}
+
+.navbar-collapse {
+    justify-content: flex-end;
+}
+
+.dropdown-menu {
+    margin-right: 3vh;
+    background-color: #e7f0f1;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+#exit{
+    color: red;
+}
+
+#exit:hover{
+    color: #e7f0f1;
+    background-color: red;
+    transition: 0.5s;
+}
+
+.dropdown-menu a {
+    color: rgba(11, 91, 101, 1); 
+}
+
+.dropdown-menu a:hover {
+    background-color: rgba(11, 91, 101, 1);
+    color: #e7f0f1;
+    transition: 0.5s;  
+}
+
+
+/*-------------------------------------------------------*/
+
+
+form {
+    padding: 15px 25px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+
+input {
+    font-family: "Lato";
+}
+
+a {
+    color: #0000ff;
+    text-decoration: none;
+
+}
+
+a:hover {
+    text-decoration: underline;
+
+}
+
+.features {
+    margin-top: 11vh;
+    margin-left: 15vh;
+    margin-right: 15vh;
+    border-radius: 10px;
+    padding: 1vh;
+    display: flex;
+    flex-direction: row;
+    gap: 1vh;
+}
+
+.historique {
+    flex: 1;
+    background-color:#e7f0f1;
+    padding: 0px;
+    text-align: left;
+    align-items: left;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.historique .histoBody{
+    overflow-y: auto;
+    max-height: 60vh;
+    margin-left: 10px;
+    scrollbar-width: thin;
+    scrollbar-color: transparent transparent;
+}
+
+.historique h4 {
+    padding: 5px;
+    padding-left: 17px;
+    font-size: 1.2rem;
+    border-bottom: 1px solid rgba(31, 111, 121, 1);
+    color: rgba(31, 111, 121, 1);
+    margin-bottom: 3vh;
+    transition: 1s;
+}
+
+.search-input {
+    width: 100%;
+    border-radius: 10px;
+    padding: 3px;
+    border: 1px solid rgba(31, 111, 121, 1);
+    transition: 1s;
+}
+
+.historique .conversation {
+    padding: 1vh;
+    margin-bottom: 1vh;
+    width: 100%;
+    background: #e7f0f1;
+    display: flex;
+    flex-direction: row;
+    gap: 1vh;
+    transition: 1s;
+}
+
+.historique .conversation:hover {
+    background-color: rgba(31, 111, 121, 0.2);
+    cursor: pointer;
+}
+
+.conversation img {
+    border-radius: 100px;
+}
+
+.conversation .infoMess {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid rgba(31, 111, 121, 1);
+    width: 100%;
+    transition: 1s;
+}
+
+.infoMess h5 {
+    font-size: 1rem;
+}
+
+.infoMess p {
+    font-size: 0.8rem;
+}
+
+.wrapper {
+    flex: 2;
+    background: #e7f0f1;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.chatbox {
+    text-align: left;
+    margin: 0 auto;
+    margin-bottom: 25px;
+    padding: 5px;
+    background-image: url('../../images/wpp/whattsapp.png');
+    background-color: #c3d3d2;
+    height: 60vh;
+    width: 100%;
+    overflow: auto;
+    border-bottom: 3px solid rgba(31, 111, 121, 1);
+    border: 1px solid rgba(31, 111, 121, 1);
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.wrapper form {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    gap: 15px;
+}
+
+#usermsg {
+    flex: 1;
+    border-radius: 10px;
+    border: 1px solid rgba(31, 111, 121, 1);
+    transition: 1s;
+}
+
+form .actionMess {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #e7f0f1;
+    transition: 1s;
+}
+
+.actionMess .joindre {
+    flex: 1;
+    padding-left: 3vh;
+    display: flex;
+    flex-direction: row;
+    gap: 5vh;
+}
+
+.joindre #phone{
+    padding-top: 5px;
+    transition: 0.5s;
+}
+
+.joindre #visio{
+    margin-bottom: 4px;
+    transition: 0.5s;
+}
+
+.joindre #mail{
+    margin-top: 5px;
+    transition: 0.5s;
+}
+
+#send{
+    padding-right: 3vh;
+    padding-top: 2px;
+}
+
+.actionMess button {
+    border-radius: 10px;
+    border: none;
+    background-color: #e7f0f1;
+    color: rgba(31, 111, 121, 1);
+    transition: 1s;
+}
+
+#submitmsg {
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+#phone:hover, #visio:hover, #mail:hover, #submitmsg:hover {
+    transform: translate3d(2px, -5px, 0);
+    transition: 0.5s;
+}
+
+.msgln {
+    background-color: rgba(255, 255, 255, 0.7);
+    width: fit-content;
+    max-width: 50vh;
+    padding: 10px;
+    margin-bottom: 5px;
+    border: 1px solid rgba(31, 111, 121, 1);
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.msgln img {
+    border-radius: 100px;
+}
+
+.msgln span.chat-time {
+    color: #888888;
+    font-size: 14px;
+}
+
+.msgln .username {
+    color: rgb(25, 88, 97);
+    font-size: 18px;
+}

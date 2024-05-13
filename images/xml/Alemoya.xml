@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<formations>
+    <formation>
+        <titre>test</titre>
+        <date_debut>2023-07-06</date_debut>
+        <date_fin>2023-07-06</date_fin>
+        <description>aa</description>
+    </formation>
+    <formation>
+        <titre>test</titre>
+        <date_debut>2023-07-06</date_debut>
+        <date_fin>2023-07-06</date_fin>
+        <description>aa</description>
+    </formation>
+    <formation>
+        <titre>zz</titre>
+        <date_debut>2023-06-01</date_debut>
+        <date_fin>2023-06-02</date_fin>
+        <description>zz</description>
+    </formation>
+    <formation>
+        <titre>zz</titre>
+        <date_debut>2023-06-01</date_debut>
+        <date_fin>2023-06-02</date_fin>
+        <description>zz</description>
+    </formation>
+<formation><titre>ON PEUT RIRE OUUUUUU</titre><date_debut>2023-06-30</date_debut><date_fin>2023-06-24</date_fin><description>h</description></formation><formation><titre>ON PEUT RIRE OUUUUUU</titre><date_debut>2023-06-30</date_debut><date_fin>2023-06-24</date_fin><description>h</description></formation><formation><titre>ddddd</titre><date_debut>2023-12-29</date_debut><date_fin>2024-03-28</date_fin><description>eeeeeeeeeee</description></formation></formations>
