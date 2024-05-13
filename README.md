@@ -1,4 +1,4 @@
-SIte Ece
+# ECEIn
 -- Page web messagerie : Le background du champs de conversation est une image qui a été récupérée sur google image (https://cdn.wallpapersafari.com/27/32/jt4AoG.jpg) elle représente le fond des conversation whattsapp.
 
 -- Le bonhomme dans les notifications a été pris sur le site code pen: (https://codepen.io/jeandekairo/pen/ObWYmY), nous avons convertion le PUG en Html sur (https://codebeautify.org/pug-to-html-converter#:~:text=What%20can%20you%20do%20with,button%2C%20Enter%20URL%20and%20Submit)
@@ -10,7 +10,10 @@ SIte Ece
 Accueil: aide codepen (https://codepen.io/kreigd/pen/ybYNo)
 
 
+##Connexion
+Url : http://localhost:9000/src/Accueil/accueil.php
 
+Utilisez les identifiants ci-dessous
 Username : Paul_frtn
 Mdp : PaulF1
-# ECEIn
+
